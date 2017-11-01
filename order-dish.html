@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title>点菜页面</title>
+		<meta name="screen-orientation" content="portrait">
+		<meta name="x5-orientation" content="portrait">	
+		<!--屏幕适配js-->
+		<!--<script src="js/detectar-width.js"></script>-->
+		<!--基础样式.css-->
+		<link rel="stylesheet" href="css/base.css" />
+		
+		<link rel="stylesheet" href="css/media.css" />
+		
+		<!--页面样式.css-->
+		<link rel="stylesheet" href="css/order-dishes.css" />
+
+	</head>
+	<body>
+		<!--head: begin-->
+		<header class="head">
+			<a id="id-back" class="back cart-iconfont cart-icon-houtui" href="javascript:;"></a>
+			<h3>点菜页面</h3>
+		</header>
+		<!--head: end-->
+		<section class="container">
+			<ul class="all-commodity">
+				<li class="title">全部商品</li>
+			</ul>
+			<!--系列列表： begin-->
+			<ul id="commodity-series" class="commodity-series">
+				<li class="commodity-select active">
+					菜系列1
+				</li>
+			</ul>
+			<!--系列列表： end-->
+			<!--具体列表： begin-->
+			<ul id="commodity-info-list" class="series-list">
+				<li class="food-head">
+					<h3>菜系列1</h3>
+				</li>
+				<li class="food-item clearfix">
+					<div class="food-pic-wrap">
+						<img class="food-pic" src="images/food-icon/e224b5a4bc7d0d4a4eec040fcee15jpeg.jpg" alt/>
+					</div>
+					<div class="food-cont-wrap">
+						<div class="food-cont">
+							<p class="food-name">大王香菇肉片肠</p>
+							<div class="food-content-sub">
+								<span>月售&nbsp;948</span>
+								<span class="food-good">赞233</span>
+							</div>
+							<div class="food-price-region">
+								<span class="food-price">¥15</span>
+							</div>
+							<div class="food-option clearfix">
+								<a class="btnCommodityAdd add-food fr" href="javascript:;">
+									<i class="cart-iconfont cart-icon-jia"></i>
+								</a>
+								<span class="food-num">1</span>
+								<a class="btnCommoditySub sub-food fl" href="javascript:;">
+									<i class="cart-iconfont cart-icon-jian"></i>
+								</a>
+							</div>
+							
+						</div>
+					</div>
+				</li>
+			</ul>
+			<!--具体列表： end-->
+		</section>
+		<!--购物车： begin-->
+		<div class="j-cart-footer cart-footer">
+			<div class="shopping-cart">
+				<a href="javascript:;" class="cart-iconfont cart-icon-gouwucheman"></a>
+				<i id="cart-num" class="cart-num">1</i>
+			</div>
+			<div class="cart-info">
+				<p class="cart-price">
+					<span>&yen;0</span>
+				</p>
+			</div>
+			<a class="cart-submit-btn" role="button" href="javascript:;">
+				<span style="display: none;">&yen;0</span>
+				<span>去结算</span>
+			</a>
+		</div>
+		<!--购物车： end-->
+		
+		<!--jquery-->
+		<script src="js/jquery-1.11.1.min.js"></script>
+		
+		<!--选择栏高度控制js-->
+		<script src="js/dish-select-height.js"></script>
+		
+		<!---->
+		<script src="js/wbs.js"></script>
+		
+		<!--商品js-->
+		<script src="js/commodity.js"></script>
+		
+		<!--购物车相关功能-->
+		<script src="js/cart.js"></script>
+		
+
+		
+		<script>
+			document.getElementById("id-back").onclick = function(){
+				history.go(-1);	
+			}
+			
+			/************************************************************************************/
+		</script>
+	</body>
+</html>

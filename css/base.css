@@ -1,0 +1,100 @@
+@charset "utf-8";
+html {
+  font-size: 62.5%;
+  line-height: 1em;
+}
+body,
+ul,
+ol,
+p,
+h1,
+h2,
+h3,
+dl,
+dt,
+dd,
+li,
+input,
+textarea,
+button {
+  margin: 0;
+  padding: 0;
+  word-break: break-all;
+}
+body {
+  text-align: left;
+  font-family: 'PingFangSC-Light', Arial, Helvetica, sans-serif, "Hiragino Sans GB";
+  color: #474747;
+  background-color: #efeff4;
+  font-size-adjust: none;
+  -webkit-text-size-adjust: none;
+}
+ul,
+li,
+dl,
+dt,
+dd {
+  list-style: none;
+}
+a,
+a:visited {
+  text-decoration: none;
+  color: #474747;
+}
+* {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+input,
+textarea {
+  -webkit-appearance: none;
+  -webkit-border-radius: 0;
+  font-family: 'PingFangSC-Light', Arial, Helvetica, sans-serif;
+}
+img {
+  vertical-align: middle;
+}
+.clearfix:after {
+  clear: both;
+  height: 0;
+  overflow: hidden;
+  display: block;
+  visibility: hidden;
+  content: ".";
+}
+.fl {
+  float: left;
+}
+.fr {
+  float: right;
+}
+.hide {
+  display: none;
+}
+
+
+@font-face {font-family: "cart-iconfont";
+  src: url('../fonts/cart-iconfont.eot'); /* IE9*/
+  src: url('../fonts/cart-iconfont.eot') format('embedded-opentype'), /* IE6-IE8 */
+  url('../fonts/cart-iconfont.woff') format('woff'),
+  url('../fonts/cart-iconfont.ttf') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+*/
+  url('../fonts/cart-iconfont.svg') format('svg'); /* iOS 4.1- */
+}
+
+.cart-iconfont {
+  font-family:"cart-iconfont" !important;
+  font-size:16px;
+  font-style:normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.cart-icon-gouwucheman:before { content: "\f0178"; }
+
+.cart-icon-houtui:before { content: "\e61f"; }
+
+.cart-icon-jia:before { content: "\e601"; }
+
+.cart-icon-jian:before { content: "\e6d9"; }
+
+.cart-icon-gouwuche:before { content: "\e501"; }
+
